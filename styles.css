@@ -1,0 +1,197 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');*/
+
+body{
+    background-image: url(img/white_brick.png);
+}
+h2{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ol, ul, li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.contenedor{/* colocamos un espacio entre los elementos verticalmente*/
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header{
+    background-color: rgb(95, 173, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a i{
+    padding: 0.5em;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+header nav ul{
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li a{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 1.4em;
+}
+header nav ul li a:hover{
+    color: rgb(241, 161, 11);
+    font-weight: 600;
+    background-color: rgba(27, 41, 170, 0.486);
+    padding: 1.4em;
+    border-radius: 0.3em;
+}
+.seccion-principal{
+    
+
+}
+.seccion-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.seccion-2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.acerca-de{
+    width: 50%;
+}
+.acerca-imagen img{
+    width: 200px;
+    height: 200px;
+}
+.seccion-3 img{/* seccion de tres columnas*/
+    border-style: solid;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+
+}
+.columnas{/* le damos espacio entre columnas en horizontal*/
+    display: flex;
+    gap: 4em;    
+}
+.izquierda, .centro, .derecha{
+    display: inline-block;
+    background-color: rgb(241, 161, 11, 0.5);
+    border-radius: 20px;
+}
+/*aplica resposividad a todo la pag*/
+@media(max-width: 768px){
+    .columnas{
+        flex-wrap: wrap;
+    }
+    .seccion-1{
+        flex-wrap: wrap;
+    }
+    header{
+        background-color: rgb(241, 161, 11);
+    }
+}
+
+.centrar-img{
+    display: flex;
+    justify-content: center;
+}
+.centrar-text{
+    padding: 0.5em;
+}
+.centrar-text h3{
+    font-size: 1em;
+    font-family: "Matemasie", sans-serif;    
+}
+.centrar-text a{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+} 
+footer{
+    background-color: rgb(95, 173, 209);
+    border-radius: 15px;
+}
+/** contacto**/
+
+.contact-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li a{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 1em;
+}
+.footer ul li a i{
+    padding: 0 1em 0 0;
+}
+.copyrihg{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+#frase{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
